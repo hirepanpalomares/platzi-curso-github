@@ -106,4 +106,4 @@ Con el comando ```git checkout``` puedes  traerte los ultimos cambios o los que 
 * --hard es el mas comun que pasa en la industria y también el más peligroso.
 * --soft : Volvemos a la version anterior pero lo que tengamos en **stagging** sigue ahí
 
-
+* El comando ```git checkout + ID``` del commit nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
