@@ -120,8 +120,8 @@ Nos ayuda a eliminar archivos de Git sin eliminiar su historial del sistema de v
 
 Recuerda que git rm no puede usarse así nomás. Debemos usar uno de los flags para indicarle a Git cómo eliminar los archivos que ya no necesitamos en la última versión del proyecto:
 
-    * git rm --cached:  Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
-    * git rm --force:  Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+* ```git rm --cached```:  Elimina los archivos del área de Staging y del próximo commit pero los mantiene en nuestro disco duro.
+* ```git rm --force```:  Elimina los archivos de Git y del disco duro. Git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos, de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
 
 ## git reset
@@ -130,13 +130,13 @@ Nos ayuda a volver en el tiempo. Pero no como ``` git checkout ```. Con ``` git 
 
 Hay dos formas de usarlo, con --hard y --soft 
 
-    * git reset --soft: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
-    * git reset --hard: Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
+* ```git reset --soft```: Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+* ```git reset --hard```: Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
 
 
 **Hay otra bandera: git reset HEAD**
 
-    * git reset HEAD: Es para sacar archivos del área de Staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
+* git reset HEAD: Es para sacar archivos del área de Staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
 
 ## ¿Por qué esto es importante?
 
