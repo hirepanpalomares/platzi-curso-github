@@ -70,3 +70,40 @@ git config --global user.name "Tu Nombre"
 Despues de configurar el usuario y nombre ya se puede hacer este commit
 
 
+# Analizar cambios en los archivos de tu proyecto con Git
+
+Ver los cambios: ```git show``` 
+Ver historia de commits: ```git log``` se le puede poner un archivo (opcional)
+Comparar cambios entre dos commits ```git commit diff commitA commitB```
+
+
+# ¿Qué es el staging y los repositorios? Ciclo básico de trabajo en Git?
+
+Con el comando ```git init``` se crea el repositorio ".git" y cuando agregas los cambios se crea un espacio en memoria ram called **staging** el cual espera a que mandes cambios al repositorio o los quites. El repositorio por defecto es called **master**.
+
+Un archivo que no se ha added es *untracked*. Cuando el arshivo esta trackeado, el archivo entra a vivir en el staging.
+
+
+Con el comando ```git checkout``` puedes  traerte los ultimos cambios o los que tu quieras hacia tu carpeta depende de como modifique el comando checkout. Cada commit es una nueva version de cambios de tu archivo hacia el repositorio
+
+
+# ¿Qué es un Branch (rama) y cómo funciona un Merge en Git?
+
+* En la rama **master** van tus versiones verdaderas finales: v1, v2, v3, etc.
+
+* Cuando quieres hacer experimentos con una version *creas otra rama*, vamos a ponerle "Experimentos" o "development" y en esa rama se reinicia el conteo de versions v1, v2, v3, etc
+
+
+* Cuando encuentras un Bug en la rama principal se crea otra rama para arreglar ese bug "Bugfixing" o "hotfix" y despues de que arreglas el bug haces un marge con el **master** para fusionar las ramas
+
+* Cuando haces un merge puede haber conflictos entre los archivos que se quieren fusionar. Y esto pasa cuando algunas archivos son diferentes en dustintas ramas. Estos conflictos se tienen que arreglar.
+
+# Volver en el tiempo en nuestro repositorio utilizando reset y checkout
+
+
+* ```git reset``` nos permite volver a una version anterior
+* reset duro y suave --hard --soft
+* --hard es el mas comun que pasa en la industria y también el más peligroso.
+* --soft : Volvemos a la version anterior pero lo que tengamos en **stagging** sigue ahí
+
+
